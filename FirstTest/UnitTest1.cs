@@ -1,18 +1,19 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+//using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
+
 
 namespace FirstTest
 {
-    [TestClass]
-    public class UnitTest1
+    
+
+    [TestFixture]
+    public class AccountTest
     {
-        [TestMethod]
-        public void TestMethod1()
+        [Test]
+        public void TransferFunds()
         {
-            Assert.AreEqual(1, 1);
-            //test from vs 
-            //test from aws
-            Assert.AreEqual(2, 2);
+            Assert.AreEqual(2,2);
         }
     }
 }
